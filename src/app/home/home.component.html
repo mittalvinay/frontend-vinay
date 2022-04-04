@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="my-5">
+            <select class="form-select w-25 float-end" aria-label="Change Language"
+                (change)="setLanguage(user.language)" [(ngModel)]="user.language">
+                <option value="de">German</option>
+                <option value="en">English</option>
+            </select>
+            <p>{{ 'WELCOME' | translate: user }}</p>
+            <p>{{ 'CART_CONTENT' | translate: user }}</p>
+        </div>
+    </div>
+</div>
